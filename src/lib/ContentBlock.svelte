@@ -2,21 +2,27 @@
 	export let src;
 	export let srcBottom = null;
 	export let imgsLeft = false;
-	export let imgsPanelWidth = 50;
+	export let leftPanelFr = 1;
+	export let rightPanelFr = 1;
 </script>
 
-<div class="wrapper">
-	{#if !imgsLeft}<div class="panel"><slot /></div>{/if}
-	<div class="panel imgs-panel" class:two-images={srcBottom !== null}>
+<div class="wrapper" style="--left-panel: {leftPanelFr}fr; --right-panel: {rightPanelFr}fr;">
+	{#if !imgsLeft}<div class="default-content-block"><slot /></div>{/if}
+	<div class="imgs-panel" class:two-images={srcBottom !== null}>
 		<div class="img-container" style="background-image: url('{src}');"></div>
 		{#if srcBottom}
 			<div class="img-container" style="background-image: url('{srcBottom}');"></div>
 		{/if}
 	</div>
-	{#if imgsLeft}<div class="panel"><slot /></div>{/if}
+	{#if imgsLeft}<div class="default-content-block"><slot /></div>{/if}
 </div>
 
 <style>
+	:root {
+		--left-panel: 1fr;
+		--right-panel: 1fr;
+	}
+
 	.wrapper {
 		position: relative;
 		width: 100vw;
@@ -24,19 +30,11 @@
 		padding: 0 !important;
 		margin: 0 !important;
 
-		/* align-items: center;
-		justify-content: center;
-		display: flex;
-		flex-direction: row; */
-
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: var(--left-panel) var(--right-panel);
 	}
 
-	.panel {
-	}
-
-	.panel.imgs-panel {
+	.imgs-panel {
 		display: grid;
 		grid-template-rows: 1fr;
 	}

@@ -2,7 +2,6 @@
 	import Navbar from '$lib/Navbar.svelte';
 </script>
 
-<!-- TODO del _placeholders/ -->
 <Navbar />
 <slot></slot>
 
@@ -22,7 +21,7 @@
 		background-color: var(--white);
 	}
 
-	/* TODO txt outline */
+	/* TODO txt outline (lanidng page "program" btn) */
 	:global(.text-link-fx) {
 		color: var(--black);
 		text-decoration: none;
@@ -37,5 +36,15 @@
 	}
 	:global(.text-link-fx.inverted:hover, .text-link-fx.inverted.active) {
 		color: var(--white);
+	}
+
+	:global(.default-content-block){
+		padding: var(--content-px);
+
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		gap: 2rem;
 	}
 </style>

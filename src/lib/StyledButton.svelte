@@ -17,9 +17,11 @@
 
 		color: var(--text);
 		padding: 1rem;
-
+		
         box-shadow: 0 0 0 2px var(--text) inset;
 		transition: all 0.25s ease-in-out;
+
+		width: max-content;
 	}
 
 	a:hover {

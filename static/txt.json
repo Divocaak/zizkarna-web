@@ -1,0 +1,219 @@
+{
+    "cs": {
+        "menu": [
+            "O nás",
+            "Program",
+            "Prostory",
+            "Trhy",
+            "Ž.lab",
+            "Kontakt"
+        ],
+        "index": {
+            "landing": "Kulturní oáza v centru Českých Budějovic",
+            "about": {
+                "heading": "O Žižkárně",
+                "about": "Jsme kulturně-kreativní prostor v Českých Budějovicích pro všechny generace. Snažíme se oživit areál bývalých Žižkových kasáren a nabídnout občanům Českých Budějovic místo pro setkávání, zábavu a kreativitu. Jsme otevření všem umělcům a kreativcům.",
+                "btn": "Chci vědět víc!"
+            },
+            "btn": "program",
+            "contact": {
+                "whereToFindUs": "Kde nás najdete?",
+                "howToConnect": "Jak se s námi spojit?",
+                "general": "Obecné informace",
+                "media": "Media",
+                "markets": "Trhy",
+                "musical": "Hudební dramaturgie",
+                "btn": "Více kontaktů a informace pro promotéry"
+            }
+        },
+        "about": [
+            {
+                "heading": "PŘINÁŠÍME ROZMANITOU KULTURU DO NAŠEHO MĚSTA",
+                "sub": "vize",
+                "texts": [
+                    "Vytvořit kulturní oázu v centru města. Místo, kde kulturní aktéři najdou své zázemí. Místo, kde se místní setkávají s přáteli, sportují a inspirují se. Propojuje generace, profese, profesionály a začátečníky. Místo, které umožní rozvinout potenciál kohokoliv."
+                ]
+            },
+            {
+                "heading": "REDEFINICE KASÁRNA",
+                "texts": [
+                    "Žižkárna je kulturním prostorem, který nabízí pro České Budějovice naprosto jedinečnou atmosféru starých kasárna.",
+                    "Snažíme se přinášet nezvyklé interprety i žánry, které jinde nedostávají prostor. Pomáháme lokálním kapelám a pravidelně spolu pořádáme hudební večery.",
+                    "Společně s našimi návštěvníky dáváme nový život areálu. Navazujeme na minulost, ale dáváme jí barevnost, která ji chyběla."
+                ]
+            },
+            {
+                "heading": "Z RUINY JSME VYTVOŘILI MÍSTO, KTERÉ ŽIJE!",
+                "texts": [
+                    "Začali jsme v roce 2019, kdy Žižkárna byla ruinou. Děravá okna, vrstva prachu a zarostlý areál.",
+                    "Následně nás zasáhla covidová pandemie, kdy jsme provedli komplexní rekonstrukci vnitřních prostor, ale také jsme naplno rozjeli pravidelný program.",
+                    "Od té doby jsme odbavili stovky akcí pro několik desítek tisíc lidí."
+                ]
+            }
+        ],
+        "zlab": {
+            "heading": "Žižkárenská Kulturní Laboratoř",
+            "texts": [
+                "Experimentální platforma pro mladé lidi, kteří si chtějí osvojit nebo zlepšit své znalosti a dovednosti v kreativních odvětvích.",
+                "Díky Ž.labu získává město mladou generaci, která ho pravidelně oživuje pomocí kultury a umění."
+            ],
+            "warning": "Zaregistruj se přes formulář na jeden ze vstupních workshopů!",
+            "btn": "formulář"
+        },
+        "market": {
+            "landing": "Trhy v Žižkárně vždy v neděli od",
+            "btn": "Aktuální termíny",
+            "notOnly": "Nejsme pouze farmářský trh…",
+            "brunch": "Jsme také skvělé místo na nedělní BRUNCH!",
+            "theatre": "Děti se mohou těšit na divadélko a největší pískoviště v Budějcích!"
+        },
+        "venues": {
+            "heading": "Naše prostory",
+            "capacity": "Kapacita",
+            "capacityStanding": "Stání",
+            "capactiySitting": "Sezení",
+            "capacityUnits": "lidí",
+            "operatingSeason": "Provozní doba",
+            "idealFor": "Ideální pro",
+            "btn": "Plány a více informací",
+            "venues": [
+                {
+                    "label": "Vnitřní tančírna a Bar",
+                    "operatingSeason": "Celý rok",
+                    "idealFor": [
+                        "Malý koncert",
+                        "Klubovou noc / Party",
+                        "Přednášku",
+                        "Divadlo",
+                        "Slam poetry"
+                    ]
+                },
+                {
+                    "label": "Garáž",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Střední koncert",
+                        "Ted-Talks",
+                        "Divadlo",
+                        "Slam Poetry",
+                        "Větší party",
+                        "Design market"
+                    ]
+                },
+                {
+                    "label": "Násypka",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Větší koncert",
+                        "Ted-Talks",
+                        "Divadlo",
+                        "Slam Poetry",
+                        "Trhy / Street Food Market",
+                        "Letní kino"
+                    ]
+                },
+                {
+                    "label": "buzerplatz",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Velké koncerty",
+                        "Divadlo",
+                        "Trhy / Street Food Market",
+                        "Velké venkovní kino",
+                        "Živý přenos sportovních utkání"
+                    ]
+                }
+            ]
+        }
+    },
+    "en": {
+        "menu": [
+            "O nás",
+            "Program",
+            "Prostory",
+            "Trhy",
+            "Ž.lab",
+            "Kontakt"
+        ],
+        "index": {
+            "landing": "Kulturní oáza v centru Českých Budějovic",
+            "about": {
+                "heading": "O Žižkárně",
+                "about": "Jsme kulturně-kreativní prostor v Českých Budějovicích pro všechny generace. Snažíme se oživit areál bývalých Žižkových kasáren a nabídnout občanům Českých Budějovic místo pro setkávání, zábavu a kreativitu. Jsme otevření všem umělcům a kreativcům.",
+                "btn": "Chci vědět víc!"
+            },
+            "btn": "program",
+            "contact": {
+                "whereToFindUs": "Kde nás najdete?",
+                "howToConnect": "Jak se s námi spojit?",
+                "general": "Obecné informace",
+                "media": "Media",
+                "markets": "Trhy",
+                "musical": "Hudební dramaturgie",
+                "btn": "Více kontaktů a informace pro promotéry"
+            }
+        },
+        "about": [
+            {
+                "heading": "",
+                "sub": "",
+                "texts": []
+            },
+            {
+                "heading": "",
+                "sub": "",
+                "texts": []
+            },
+            {
+                "heading": "",
+                "sub": "",
+                "texts": []
+            }
+        ],
+        "zlab": {
+            "heading": "",
+            "texts": [],
+            "warning": "",
+            "btn": ""
+        },
+        "market": {
+            "landing": "",
+            "btn": "",
+            "notOnly": "",
+            "brunch": "",
+            "theatre": ""
+        },
+        "venues": {
+            "heading": "",
+            "capacity": "",
+            "capacityStanding": "",
+            "capactiySitting": "",
+            "capacityUnits": "",
+            "operatingSeason": "",
+            "idealFor": "",
+            "btn": "",
+            "venues": [
+                {
+                    "label": "",
+                    "operatingSeason": "",
+                    "idealFor": []
+                },
+                {
+                    "label": "",
+                    "operatingSeason": "",
+                    "idealFor": []
+                },
+                {
+                    "label": "",
+                    "operatingSeason": "",
+                    "idealFor": []
+                },
+                {
+                    "label": "",
+                    "operatingSeason": "",
+                    "idealFor": []
+                }
+            ]
+        }
+    }
+}
