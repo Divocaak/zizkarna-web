@@ -1,31 +1,25 @@
 <script>
+	import { lang } from '$lib/stores/LangStore.js';
+	import langs from '$lib/localization.json';
 	import ContentBlock from '$lib/ContentBlock.svelte';
 </script>
 
-<ContentBlock src="/imgs/3.jpg">
-	<h1>přinášíme rozmanitnou kulturu do našeho města</h1>
-	<p>vize</p>
-	<p>
-		Vytvořit kulturní oázu v centru města. Místo, kde kulturní aktéři najdou své zázemí. Místo, kde
-		se místní setkávají s přáteli, sportují a inspirují se. Propojuje generace, profese,
-		profesionály a začátečníky. Místo, které umožní rozvinout potenciál kohokoliv.
-	</p>
+<ContentBlock src="/imgs/11.jpg">
+	<h1>{langs[$lang].about[0].heading}</h1>
+	<p class="primary">{langs[$lang].about[0].sub}</p>
+	{#each langs[$lang].about[0].texts as text}
+		<p>{text}</p>
+	{/each}
 </ContentBlock>
-<ContentBlock src="/imgs/3.jpg" imgsLeft={true}>
-	<h1>redefinice kasárna</h1>
-	<p>
-		Žižkárna je kulturním prostorem, který nabízí pro České Budějovice naprosto jedinečnou atmosféru
-		starých kasárna.
-	</p>
-	<p>
-		Snažíme se přinášet nezvyklé interprety i žánry, které jinde nedostávají prostor. Pomáháme
-		lokálním kapelám a pravidelně spolu pořádáme hudební večery.
-	</p>
-	<p>
-		Společně s našimi návštěvníky dáváme nový život areálu. Navazujeme na minulost, ale dáváme jí
-		barevnost, která ji chyběla.
-	</p>
+<ContentBlock src="/imgs/16.jpg" imgsLeft={true}>
+	<h1>{langs[$lang].about[1].heading}</h1>
+	{#each langs[$lang].about[1].texts as text}
+		<p>{text}</p>
+	{/each}
 </ContentBlock>
-<ContentBlock src="/imgs/3.jpg">
-    <h1>z ruiny jsme vytvořili místo, které žije!</h1>
+<ContentBlock src="/imgs/0.jpg">
+	<h1>{langs[$lang].about[2].heading}</h1>
+	{#each langs[$lang].about[2].texts as text}
+		<p>{text}</p>
+	{/each}
 </ContentBlock>

@@ -1,6 +1,8 @@
 <script>
 	import { blur, fade } from 'svelte/transition';
 	import { page } from '$app/stores';
+	import { lang } from '$lib/stores/LangStore.js';
+	import langs from '$lib/localization.json';
 
 	let menuShown = false;
 	const showMenu = (newVal) => (menuShown = newVal);
@@ -25,18 +27,21 @@
 		</svg>
 	</button> -->
 	<div class="wide-nav">
-		<a class="text-link-fx" class:active={$page.url.pathname === '/about'} href="/about">O nás</a>
-		<a class="text-link-fx" class:active={$page.url.pathname === '/programme'} href="/programme"
-			>Program</a
+		<a class="text-link-fx" class:active={$page.url.pathname === '/about'} href="/#about">{langs[$lang].menu[0]}</a>
+		<a
+			class="text-link-fx"
+			class:active={$page.url.pathname === '/programme'}
+			href="https://program.zizkarna.cz/"
+			target="_blank">{langs[$lang].menu[1]}</a
 		>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/venues'} href="/venues"
-			>Prostory</a
+			>{langs[$lang].menu[2]}</a
 		>
-		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets">Trhy</a
+		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets">{langs[$lang].menu[3]}</a
 		>
-		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab">Ž.lab</a>
+		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab">{langs[$lang].menu[4]}</a>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/contacts'} href="/contacts"
-			>Kontakty</a
+			>{langs[$lang].menu[5]}</a
 		>
 		<!-- TODO lang btn -->
 	</div>

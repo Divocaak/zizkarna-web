@@ -10,6 +10,7 @@
 		--white: #efefef;
 		--black: #242424;
 		--primary: #f3d305;
+		--secondary: #5a01da;
 
 		--base-px: 2vw;
 		--content-px: calc(3 * var(--base-px));
@@ -19,6 +20,9 @@
 		margin: 0;
 		padding: 0;
 		background-color: var(--white);
+	}
+	:global(html) {
+		scroll-behavior: smooth;
 	}
 
 	/* TODO txt outline (lanidng page "program" btn) */
@@ -38,7 +42,7 @@
 		color: var(--white);
 	}
 
-	:global(.default-content-block){
+	:global(.default-content-block) {
 		padding: var(--content-px);
 
 		display: flex;
@@ -46,5 +50,9 @@
 		align-items: start;
 		justify-content: start;
 		gap: 2rem;
+	}
+
+	:global(.primary) {
+		color: var(--primary);
 	}
 </style>
