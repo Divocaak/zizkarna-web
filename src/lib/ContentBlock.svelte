@@ -6,6 +6,8 @@
 	export let rightPanelFr = 1;
 	export let clr = 'var(--black)';
 	export let bgClr = 'var(--white)';
+	export let gap = 2;
+	export let contentPadding = "inherit";
 </script>
 
 <div
@@ -14,16 +16,18 @@
 		--left-panel: {leftPanelFr}fr;
 		--right-panel: {rightPanelFr}fr;
 		--color: {clr};
-		--bg-color: {bgClr};"
+		--bg-color: {bgClr};
+		--gap: {gap}rem;
+		--content-padding: {contentPadding}"
 >
-	{#if !imgsLeft}<div class="default-content-block colored-block"><slot /></div>{/if}
+	{#if !imgsLeft}<div class="default-content-block content-block"><slot /></div>{/if}
 	<div class="imgs-panel" class:two-images={srcBottom !== null}>
 		<div class="img-container" style="background-image: url('{src}');"></div>
 		{#if srcBottom}
 			<div class="img-container" style="background-image: url('{srcBottom}');"></div>
 		{/if}
 	</div>
-	{#if imgsLeft}<div class="default-content-block colored-block"><slot /></div>{/if}
+	{#if imgsLeft}<div class="default-content-block content-block"><slot /></div>{/if}
 </div>
 
 <style>
@@ -32,6 +36,8 @@
 		--right-panel: 1fr;
 		--color: var(--black);
 		--bg-color: var(--white);
+		--gap: 2rem;
+		--content-padding: var(--content-px);
 	}
 
 	.wrapper {
@@ -58,8 +64,10 @@
 		background-size: cover;
 	}
 
-	.colored-block {
+	.content-block {
 		color: var(--color);
 		background-color: var(--bg-color);
+		gap: var(--gap);
+		padding: var(--content-padding);
 	}
 </style>

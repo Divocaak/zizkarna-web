@@ -39,6 +39,7 @@
 		>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets">{langs[$lang].menu[3]}</a
 		>
+		<!-- TODO hvr clr -->
 		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab">{langs[$lang].menu[4]}</a>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/contacts'} href="/contacts"
 			>{langs[$lang].menu[5]}</a

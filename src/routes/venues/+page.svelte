@@ -6,10 +6,10 @@
 	import StyledButton from '$lib/StyledButton.svelte';
 </script>
 
-<ImageBlock src="/imgs/20.jpg">
+<ImageBlock src="/imgs/2.jpg">
 	<h1 class="primary">{langs[$lang].venues.heading}</h1>
 </ImageBlock>
-<ContentBlock src="/imgs/19.jpg" srcBottom="/imgs/3.jpg" clr="var(--primary)">
+<ContentBlock src="/imgs/19.jpg" srcBottom="/imgs/3.jpg" bgClr="var(--primary)" gap={0.5}>
 	<h1>{langs[$lang].venues.venues[0].label}</h1>
 	<h2>{langs[$lang].venues.capacity}</h2>
 	<p>{langs[$lang].venues.capacityStanding}: 120 {langs[$lang].venues.capacityUnits}</p>
@@ -20,13 +20,14 @@
 	{#each langs[$lang].venues.venues[0].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
+	<StyledButton href="/contacts" label={langs[$lang].venues.btn} actionClr="var(--black)"/>
 </ContentBlock>
 <ContentBlock
 	src="/imgs/12.jpg"
 	srcBottom="/imgs/13.jpg"
 	clr="var(--white)"
 	bgClr="var(--secondary)"
+	gap={0.5}
 >
 	<h1>{langs[$lang].venues.venues[1].label}</h1>
 	<h2>{langs[$lang].venues.capacity}</h2>
@@ -38,7 +39,7 @@
 	{#each langs[$lang].venues.venues[1].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
+	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)" actionClr="var(--primary)"/>
 </ContentBlock>
 <ContentBlock
 	src="/imgs/5.jpg"
@@ -46,6 +47,7 @@
 	imgsLeft={true}
 	clr="var(--white)"
 	bgClr="var(--black)"
+	gap={0.5}
 >
 	<h1>{langs[$lang].venues.venues[2].label}</h1>
 	<h2>{langs[$lang].venues.capacity}</h2>
@@ -56,17 +58,27 @@
 	{#each langs[$lang].venues.venues[2].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
+	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)"/>
 </ContentBlock>
-<ContentBlock src="/imgs/17.jpg" srcBottom="/imgs/2.jpg" imgsLeft={true}>
-	<h1>{langs[$lang].venues.venues[2].label}</h1>
+<ContentBlock src="/imgs/17.jpg" srcBottom="/imgs/1.jpg" gap={0.5} imgsLeft={true}>
+	<h1>{langs[$lang].venues.venues[3].label}</h1>
 	<h2>{langs[$lang].venues.capacity}</h2>
 	<p>2000+ {langs[$lang].venues.capacityUnits}</p>
 	<h2>{langs[$lang].venues.operatingSeason}</h2>
-	<p>{langs[$lang].venues.venues[2].operatingSeason}</p>
+	<p>{langs[$lang].venues.venues[3].operatingSeason}</p>
 	<h2>{langs[$lang].venues.idealFor}</h2>
-	{#each langs[$lang].venues.venues[2].idealFor as text}
+	{#each langs[$lang].venues.venues[3].idealFor as text}
 		<p>{text}</p>
 	{/each}
 	<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
 </ContentBlock>
+
+<style>
+	p {
+		margin: 0;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+</style>

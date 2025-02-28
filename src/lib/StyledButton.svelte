@@ -2,9 +2,11 @@
 	export let label;
 	export let href;
 	export let target = '_self';
+	export let textClr = 'var(--black)';
+	export let actionClr = 'var(--primary)';
 </script>
 
-<a {href} {target}>{label}</a>
+<a {href} {target} style="--text: {textClr}; --action: {actionClr};">{label}</a>
 
 <style>
 	:root {

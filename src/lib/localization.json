@@ -124,6 +124,22 @@
                     ]
                 }
             ]
+        },
+        "contacts": {
+            "contacts": {
+                "heading": "kontakty",
+                "music": "Hudební dramaturgie",
+                "programme": "Dramaturgie",
+                "media": "Marketing a PR",
+                "markets": "Trhy"
+            },
+            "forPromoters": {
+                "heading": "Pro promotéry",
+                "presentationBtn": "Prezentace o Žižkárně"
+            },
+            "residency": "sídlo",
+            "address": "adresa",
+            "followUs": "Sledujte nás na sociálních sítích"
         }
     },
     "en": {
@@ -214,6 +230,22 @@
                     "idealFor": []
                 }
             ]
+        },
+        "contacts": {
+            "contacts": {
+                "heading": "kontakty",
+                "music": "Hudební dramaturgie",
+                "programme": "Dramaturgie",
+                "media": "Marketing a PR",
+                "markets": "Trhy"
+            },
+            "forPromoters": {
+                "heading": "Pro promotéry",
+                "presentationBtn": "Prezentace o Žižkárně"
+            },
+            "residency": "sídlo",
+            "address": "adresa",
+            "followUs": "Sledujte nás na sociálních sítích"
         }
     }
 }

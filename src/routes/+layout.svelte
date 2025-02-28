@@ -3,6 +3,7 @@
 </script>
 
 <Navbar />
+<!-- TODO add logo overlays on pages -->
 <slot></slot>
 
 <style>
@@ -11,6 +12,7 @@
 		--black: #242424;
 		--primary: #f3d305;
 		--secondary: #5a01da;
+		--zlab-primary: #ff5500;
 
 		--base-px: 2vw;
 		--content-px: calc(3 * var(--base-px));
