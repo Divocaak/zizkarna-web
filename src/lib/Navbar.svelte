@@ -27,7 +27,9 @@
 		</svg>
 	</button> -->
 	<div class="wide-nav">
-		<a class="text-link-fx" class:active={$page.url.pathname === '/about'} href="/#about">{langs[$lang].menu[0]}</a>
+		<a class="text-link-fx" class:active={$page.url.pathname === '/about'} href="/#about"
+			>{langs[$lang].menu[0]}</a
+		>
 		<a
 			class="text-link-fx"
 			class:active={$page.url.pathname === '/programme'}
@@ -37,14 +39,19 @@
 		<a class="text-link-fx" class:active={$page.url.pathname === '/venues'} href="/venues"
 			>{langs[$lang].menu[2]}</a
 		>
-		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets">{langs[$lang].menu[3]}</a
+		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets"
+			>{langs[$lang].menu[3]}</a
 		>
 		<!-- TODO hvr clr -->
-		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab">{langs[$lang].menu[4]}</a>
+		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab"
+			>{langs[$lang].menu[4]}</a
+		>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/contacts'} href="/contacts"
 			>{langs[$lang].menu[5]}</a
 		>
-		<!-- TODO lang btn -->
+		<button class="text-link-fx" on:click={() => lang.set($lang === 'cs' ? 'en' : 'cs')}
+			>{$lang === 'cs' ? 'en' : 'cs'}</button
+		>
 	</div>
 </nav>
 
@@ -78,20 +85,17 @@
 	}
 
 	nav .wide-nav a {
-		padding: 0 1em;
+		margin: 0 1em;
 	}
 	nav .wide-nav a:first-of-type {
-		padding-left: 0;
-	}
-	nav .wide-nav a:last-of-type {
-		padding-right: 0;
+		margin-left: 0;
 	}
 
 	nav button {
 		all: unset;
-		display: none;
-
-		padding-right: 15px;
+		margin-left: 1em;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
 	}
 
 	.small-nav-bg {
