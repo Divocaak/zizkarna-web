@@ -12,14 +12,37 @@
 	{/each}
 </ContentBlock>
 <ContentBlock src="/imgs/16.jpg" imgsLeft={true}>
-	<h1>{langs[$lang].about[1].heading}</h1>
+	<h1 class="secondary">{langs[$lang].about[1].heading}</h1>
 	{#each langs[$lang].about[1].texts as text}
 		<p>{text}</p>
 	{/each}
 </ContentBlock>
 <ContentBlock src="/imgs/0.jpg">
-	<h1>{langs[$lang].about[2].heading}</h1>
+	<h1 class="primary">{langs[$lang].about[2].heading}</h1>
 	{#each langs[$lang].about[2].texts as text}
 		<p>{text}</p>
 	{/each}
 </ContentBlock>
+
+<style>
+	h1{
+		font-weight: 800;
+		font-size: var(--fs-64);
+		line-height: 70px;
+		text-transform: uppercase;
+	}
+	
+	p{
+		font-weight: 300;
+		font-size: var(--fs-32);
+		line-height: 40px;
+
+		padding:0;
+		margin:0;
+	}
+
+	p.primary{
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+</style>

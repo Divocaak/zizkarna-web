@@ -43,7 +43,8 @@
 	.wrapper {
 		position: relative;
 		width: 100vw;
-		height: 100vh;
+		height: fit-content;
+		min-height: 100vh;
 		padding: 0 !important;
 		margin: 0 !important;
 

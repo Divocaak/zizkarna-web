@@ -9,7 +9,7 @@
 </script>
 
 <nav>
-	<a class="home text-link-fx" href="/">žižkárna</a>
+	<a class="home text-link-fx" href="/">ŽIŽKÁRNA</a>
 	<!-- <button on:click={() => showMenu(!menuShown)}>
 		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
 			{#if !menuShown}
@@ -42,15 +42,14 @@
 		<a class="text-link-fx" class:active={$page.url.pathname === '/markets'} href="/markets"
 			>{langs[$lang].menu[3]}</a
 		>
-		<!-- TODO hvr clr -->
-		<a class="text-link-fx" class:active={$page.url.pathname === '/zlab'} href="/zlab"
+		<a class="text-link-fx zlab" class:active={$page.url.pathname === '/zlab'} href="/zlab"
 			>{langs[$lang].menu[4]}</a
 		>
 		<a class="text-link-fx" class:active={$page.url.pathname === '/contacts'} href="/contacts"
 			>{langs[$lang].menu[5]}</a
 		>
 		<button class="text-link-fx" on:click={() => lang.set($lang === 'cs' ? 'en' : 'cs')}
-			>{$lang === 'cs' ? 'en' : 'cs'}</button
+			>{$lang === 'cs' ? 'EN' : 'CZ'}</button
 		>
 	</div>
 </nav>
@@ -82,6 +81,16 @@
 		border-bottom: 2px solid var(--black);
 
 		padding: calc(var(--base-px) / 2) var(--base-px);
+
+		font-weight: 800;
+		font-size: var(--fs-20);
+		line-height: 31px;
+	}
+
+	nav .home {
+		font-weight: 800;
+		font-size: var(--fs-32);
+		line-height: 37px;
 	}
 
 	nav .wide-nav a {
@@ -95,7 +104,22 @@
 		all: unset;
 		margin-left: 1em;
 		cursor: pointer;
-		transition: all .2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	a:hover,
+	a.active,
+	button:hover {
+		text-shadow:
+			-1px -1px 0 var(--black),
+			1px -1px 0 var(--black),
+			-1px 1px 0 var(--black),
+			1px 1px 0 var(--black);
+	}
+
+	a.zlab:hover,
+	a.zlab.active {
+		color: var(--zlab-primary);
 	}
 
 	.small-nav-bg {

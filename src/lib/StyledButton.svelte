@@ -19,14 +19,20 @@
 
 		color: var(--text);
 		padding: 1rem;
-		
-        box-shadow: 0 0 0 2px var(--text) inset;
+
+		box-shadow: 0 0 0 2px var(--text) inset;
 		transition: all 0.25s ease-in-out;
 
 		width: max-content;
+
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 300;
+		font-size: var(--fs-24);
+		line-height: 31px;
 	}
 
 	a:hover {
-        box-shadow: 0 0 0 4px var(--action) inset;
+		box-shadow: 0 0 0 4px var(--action) inset;
 	}
 </style>

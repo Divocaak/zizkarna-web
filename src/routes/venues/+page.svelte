@@ -20,7 +20,7 @@
 	{#each langs[$lang].venues.venues[0].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} actionClr="var(--black)"/>
+	<StyledButton href="/contacts" label={langs[$lang].venues.btn} actionClr="var(--black)" />
 </ContentBlock>
 <ContentBlock
 	src="/imgs/12.jpg"
@@ -39,7 +39,12 @@
 	{#each langs[$lang].venues.venues[1].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)" actionClr="var(--primary)"/>
+	<StyledButton
+		href="/contacts"
+		label={langs[$lang].venues.btn}
+		textClr="var(--white)"
+		actionClr="var(--primary)"
+	/>
 </ContentBlock>
 <ContentBlock
 	src="/imgs/5.jpg"
@@ -58,7 +63,7 @@
 	{#each langs[$lang].venues.venues[2].idealFor as text}
 		<p>{text}</p>
 	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)"/>
+	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)" />
 </ContentBlock>
 <ContentBlock src="/imgs/17.jpg" srcBottom="/imgs/1.jpg" gap={0.5} imgsLeft={true}>
 	<h1>{langs[$lang].venues.venues[3].label}</h1>
@@ -80,5 +85,35 @@
 
 	h2 {
 		margin-bottom: 0;
+	}
+
+	h1 {
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	h1.primary {
+		font-size: var(--fs-150);
+		line-height: 184px;
+	}
+	
+	h1:not(.primary) {
+		font-size: var(--fs-72);
+		line-height: 85px;
+		margin: 0;
+	}
+	
+	h2, p{
+		font-weight: 300;
+		font-size: var(--fs-32);
+		line-height: 37px;
+	}
+	
+	h2{
+		font-weight: 800;
+	}
+
+	p:last-of-type{
+		padding-bottom: 5rem;
 	}
 </style>

@@ -8,17 +8,29 @@
 </script>
 
 <div>
-	<b>{label}</b>
-	{#if name}<p>{name}</p>{/if}
+	<p>{label}</p>
+	<p>{@html name ?? '<br>'}</p>
 	<a href="mailto:{mail}" class="text-link-fx">{mail}</a>
 	{#if mailSecondary}<a href="mailto:{mailSecondary}" class="text-link-fx">{mailSecondary}</a>{/if}
 </div>
 
 <style>
 	a,
-	b,
 	p {
+		font-weight: 400;
+		font-size: var(--fs-24);
+		line-height: 32px;
+
 		margin: 0;
+	}
+
+	p:first-of-type {
+		font-weight: 800;
+	}
+
+	a {
+		font-weight: 400;
+		text-align: end;
 	}
 
 	div {
@@ -26,6 +38,10 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto auto;
 		grid-auto-flow: column;
-		border-top: 2px solid var(--black);
+
+		border-top: 1px solid var(--black);
+
+		padding-top: 0.5rem;
+		padding-bottom: 1rem;
 	}
 </style>

@@ -47,7 +47,7 @@
 		{#each langs[$lang].zlab.texts as text}
 			<p>{text}</p>
 		{/each}
-		<p>
+		<div class="warning">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315.29 368.48">
 				<path
 					d="M148.71,41.2L20.97,319.07c-2.99,6.51,1.76,13.94,8.93,13.94h255.48c7.17,0,11.93-7.43,8.93-13.94L166.58,41.2c-3.51-7.63-14.36-7.63-17.87,0Z"
@@ -60,8 +60,10 @@
 					/>
 				</g>
 			</svg>
-			{langs[$lang].zlab.warning}
-		</p>
+			<p>
+				{langs[$lang].zlab.warning}
+			</p>
+		</div>
 		<a href="">{langs[$lang].zlab.btn}</a>
 	</div>
 </div>
@@ -90,34 +92,56 @@
 
 	h1 {
 		color: var(--zlab-primary);
+		font-weight: 800;
+		font-size: var(--fs-48);
+		line-height: 48px;
+	}
+
+	p,
+	a {
+		font-weight: 300;
+		font-size: var(--fs-32);
+		line-height: 35px;
+		margin: 0;
+	}
+
+	.warning {
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.warning p {
+		font-weight: 400;
 	}
 
 	a {
 		width: 100%;
-		text-align: center;
 		padding: 1rem;
-		text-decoration: none;
+
 		box-shadow:
 			calc(var(--border-w) * -1) 0 0 0 var(--black),
 			var(--border-w) 0 0 0 var(--black),
 			0 calc(var(--border-w) * -1) 0 0 var(--black),
 			0 var(--border-w) 0 0 var(--black);
 		color: var(--black);
+
+		text-align: center;
+		text-decoration: none;
 		text-transform: uppercase;
-        transition: all .15s;
-	}
-    
-	a:hover {
-        box-shadow:
-            calc(var(--border-w) * -1) 0 0 0 var(--zlab-primary),
-            var(--border-w) 0 0 0 var(--zlab-primary),
-            0 calc(var(--border-w) * -1) 0 0 var(--zlab-primary),
-            0 var(--border-w) 0 0 var(--zlab-primary);
-        color: var(--zlab-primary);
+		font-weight: 800;
+
+		transition: all 0.15s;
 	}
 
-	p svg {
-		position: relative;
-		height: 5rem;
+	a:hover {
+		box-shadow:
+			calc(var(--border-w) * -1) 0 0 0 var(--zlab-primary),
+			var(--border-w) 0 0 0 var(--zlab-primary),
+			0 calc(var(--border-w) * -1) 0 0 var(--zlab-primary),
+			0 var(--border-w) 0 0 var(--zlab-primary);
+		color: var(--zlab-primary);
 	}
 </style>
