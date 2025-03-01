@@ -64,6 +64,7 @@
 				{langs[$lang].zlab.warning}
 			</p>
 		</div>
+		<!-- TODO btns -->
 		<a href="">{langs[$lang].zlab.btn}</a>
 	</div>
 </div>

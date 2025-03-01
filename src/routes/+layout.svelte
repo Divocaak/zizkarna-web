@@ -4,8 +4,9 @@
 
 <Navbar />
 <!-- TODO add logo overlays on pages -->
- <!-- landing -->
- <!-- about -->
+<!-- landing -->
+<!-- about -->
+<!-- contacts -->
 <slot></slot>
 
 <style>
