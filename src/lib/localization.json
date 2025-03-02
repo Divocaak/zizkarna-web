@@ -58,13 +58,14 @@
                 "Díky Ž.labu získává město mladou generaci, která ho pravidelně oživuje pomocí kultury a umění."
             ],
             "warning": "Zaregistruj se přes formulář na jeden ze vstupních workshopů!",
-            "btn": "formulář"
+            "soundBtn": "základy zvučení",
+            "lightsBtn": "základy svícení"
         },
         "market": {
             "landing": "Trhy v Žižkárně vždy v neděli od",
             "btn": "Aktuální termíny",
             "notOnly": "Nejsme pouze farmářský trh…",
-            "brunch": "Jsme také skvělé místo na nedělní BRUNCH!",
+            "brunch": "Jsme také skvělé místo na nedělní",
             "theatre": "Děti se mohou těšit na divadélko a největší pískoviště v Budějcích!"
         },
         "venues": {
@@ -201,13 +202,14 @@
                 "Thanks to Ž.lab, the city is attracting a young generation that regularly enlivens it through culture and art."
             ],
             "warning": "Register for one of the entry workshops via the form!",
-            "btn": "form"
+            "soundBtn": "sound engineer basics",
+            "lightsBtn": "light design basics"
         },
         "market": {
             "landing": "Markets in Žižkárna every Sunday from",
             "btn": "Current dates",
             "notOnly": "We are not just farmer's market…",
-            "brunch": "We are an ideal place for sunday BRUNCH!",
+            "brunch": "We are an ideal place for sunday",
             "theatre": "Children can enjoy a theatre and the biggest sandpit in Budějce!"
         },
         "venues": {

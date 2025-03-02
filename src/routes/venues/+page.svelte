@@ -28,6 +28,7 @@
 	clr="var(--white)"
 	bgClr="var(--secondary)"
 	gap={0.5}
+	imgsLeft={true}
 >
 	<h1>{langs[$lang].venues.venues[1].label}</h1>
 	<h2>{langs[$lang].venues.capacity}</h2>
@@ -49,7 +50,6 @@
 <ContentBlock
 	src="/imgs/5.jpg"
 	srcBottom="/imgs/18.jpg"
-	imgsLeft={true}
 	clr="var(--white)"
 	bgClr="var(--black)"
 	gap={0.5}
