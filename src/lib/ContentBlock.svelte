@@ -7,7 +7,7 @@
 	export let clr = 'var(--black)';
 	export let bgClr = 'var(--white)';
 	export let gap = 2;
-	export let contentPadding = "inherit";
+	export let contentPadding = 'inherit';
 </script>
 
 <div
@@ -63,12 +63,21 @@
 	.img-container {
 		background-position: center;
 		background-size: cover;
+		background-repeat: none;
 	}
 
 	.content-block {
+		width: calc(100% - 2 * var(--content-padding));
 		color: var(--color);
 		background-color: var(--bg-color);
 		gap: var(--gap);
 		padding: var(--content-padding);
+	}
+
+	@media (max-width: 575px) {
+		.wrapper {
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: none;
+		}
 	}
 </style>

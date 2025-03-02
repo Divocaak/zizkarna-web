@@ -35,4 +35,11 @@
 	a:hover {
 		box-shadow: 0 0 0 4px var(--action) inset;
 	}
+
+	@media (max-width: 575px) {
+		a{
+			width: fit-content;
+			text-align: center;
+		}
+	}
 </style>

@@ -27,17 +27,19 @@
 	<p id="time">9:00</p>
 	<a href="https://program.zizkarna.cz/">{langs[$lang].market.btn}</a>
 </ContentBlock>
-<div id="two-images-block">
-	<img src="/imgs/10.jpg" alt="fresh pastry" />
-	<img src="/imgs/4.jpg" alt="the best coffee" />
-	<p>{langs[$lang].market.notOnly}</p>
-	<p>{langs[$lang].market.brunch} <span>brunch!</span></p>
-</div>
-<ImageBlock src="/imgs/14.jpg">
-	<div id="theatre">
-		<p>{langs[$lang].market.theatre}</p>
+<div class="designed">
+	<div id="two-images-block">
+		<img src="/imgs/10.jpg" alt="fresh pastry" />
+		<img src="/imgs/4.jpg" alt="the best coffee" />
+		<p>{langs[$lang].market.notOnly}</p>
+		<p>{langs[$lang].market.brunch} <span>brunch!</span></p>
 	</div>
-</ImageBlock>
+	<ImageBlock src="/imgs/14.jpg">
+		<div id="theatre">
+			<p>{langs[$lang].market.theatre}</p>
+		</div>
+	</ImageBlock>
+</div>
 
 <style>
 	.clip-path-svg {
@@ -116,30 +118,30 @@
 
 	#two-images-block p {
 		position: absolute;
-        
-        font-weight: 300;
+
+		font-weight: 300;
 		font-size: var(--fs-72);
 		line-height: 90px;
 	}
-    
+
 	#two-images-block p:first-of-type {
-        top: 0;
+		top: 0;
 		left: 50%;
-        max-width: calc(50% - var(--base-px));
-        padding-left: var(--base-px);
+		max-width: calc(50% - var(--base-px));
+		padding-left: var(--base-px);
 	}
-    
+
 	#two-images-block p:last-of-type {
-        top: calc(50% + var(--base-px));
+		top: calc(50% + var(--base-px));
 		left: 0;
-        max-width: calc(50% - var(--content-px));
-        padding-left: var(--content-px);
+		max-width: calc(50% - var(--content-px));
+		padding-left: var(--content-px);
 	}
 
 	#two-images-block p:last-of-type span {
-        color: var(--primary);
-        text-transform: uppercase;
-        font-weight: 800;
+		color: var(--primary);
+		text-transform: uppercase;
+		font-weight: 800;
 	}
 
 	#theatre {
@@ -152,11 +154,41 @@
 	}
 
 	#theatre p {
-        font-weight: 800;
+		font-weight: 800;
 		font-size: var(--fs-48);
 		line-height: 60px;
-        max-width: 50%;
-        padding-left: var(--content-px);
-        padding-top: var(--base-px);
+		max-width: 50%;
+		padding-left: var(--content-px);
+		padding-top: var(--base-px);
+	}
+
+	@media (max-width: 575px) {
+		#logo {
+			width: 100%;
+		}
+
+		.designed {
+			display: none;
+		}
+
+		#landing {
+			font-size: var(--fs-64);
+			line-height: 70px;
+			margin: 0;
+		}
+
+		#time {
+			font-size: var(--fs-72);
+			line-height: 80px;
+			margin: 0;
+		}
+
+		a {
+			font-size: var(--fs-64);
+			line-height: 90px;
+
+			border: 5px solid var(--black);
+			border-radius: 50px;
+		}
 	}
 </style>

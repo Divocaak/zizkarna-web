@@ -96,24 +96,38 @@
 		font-size: var(--fs-150);
 		line-height: 184px;
 	}
-	
+
 	h1:not(.primary) {
 		font-size: var(--fs-72);
 		line-height: 85px;
 		margin: 0;
 	}
-	
-	h2, p{
+
+	h2,
+	p {
 		font-weight: 300;
 		font-size: var(--fs-32);
 		line-height: 37px;
 	}
-	
-	h2{
+
+	h2 {
 		font-weight: 800;
 	}
 
-	p:last-of-type{
+	p:last-of-type {
 		padding-bottom: 5rem;
+	}
+
+	@media (max-width: 575px) {
+		h1.primary {
+			font-size: var(--fs-72);
+			line-height: 75px;
+			text-align: center;
+		}
+
+		h1:not(.primary) {
+			font-size: var(--fs-48);
+			line-height: 55px;
+		}
 	}
 </style>

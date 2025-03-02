@@ -105,10 +105,12 @@
 		padding-top: 3rem;
 	}
 
-	.panel:first-of-type {
+	.panel:first-of-type,
+	.contacts h1 {
 		grid-column: span 2;
 	}
-	.panel:last-of-type {
+	.panel:last-of-type,
+	.contact-list:last-of-type {
 		margin-left: var(--base-px);
 		width: calc(100% - var(--base-px));
 	}
@@ -116,15 +118,6 @@
 	.contacts {
 		display: grid;
 		grid-template-columns: 3fr 2fr;
-	}
-
-	.contact-list:last-of-type {
-		margin-left: var(--base-px);
-		width: calc(100% - var(--base-px));
-	}
-
-	.contacts h1 {
-		grid-column: span 2;
 	}
 
 	.border-b {
@@ -153,5 +146,35 @@
 	h1.primary,
 	h1.secondary {
 		text-transform: uppercase;
+	}
+
+	@media (max-width: 575px) {
+		.wrapper {
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: none;
+		}
+
+		.contacts {
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: none;
+		}
+
+		.panel:first-of-type {
+			grid-column: unset;
+		}
+
+		.contacts h1 {
+			grid-column: unset;
+		}
+
+		.panel:last-of-type,
+		.contact-list:last-of-type {
+			margin-left: unset;
+			width: 100%;
+		}
+
+		.buttons {
+			flex-direction: column;
+		}
 	}
 </style>

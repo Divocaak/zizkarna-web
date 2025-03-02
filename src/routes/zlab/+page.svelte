@@ -125,6 +125,7 @@
 	}
 
 	a {
+		position: relative;
 		width: 100%;
 		padding: 1rem;
 
@@ -150,5 +151,16 @@
 			0 calc(var(--border-w) * -1) 0 0 var(--zlab-primary),
 			0 var(--border-w) 0 0 var(--zlab-primary);
 		color: var(--zlab-primary);
+	}
+
+	@media (max-width: 575px) {
+		.wrapper {
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: none;
+		}
+
+		a {
+			width: max-content;
+		}
 	}
 </style>

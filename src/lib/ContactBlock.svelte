@@ -9,7 +9,7 @@
 
 <div>
 	<p>{label}</p>
-	<p>{@html name ?? '<br>'}</p>
+	{#if name}<p>{name}</p>{:else}<br />{/if}
 	<a href="mailto:{mail}" class="text-link-fx">{mail}</a>
 	{#if mailSecondary}<a href="mailto:{mailSecondary}" class="text-link-fx">{mailSecondary}</a>{/if}
 </div>
@@ -43,5 +43,11 @@
 
 		padding-top: 0.5rem;
 		padding-bottom: 1rem;
+	}
+
+	@media (max-width: 575px) {
+		div {
+			display: block;
+		}
 	}
 </style>

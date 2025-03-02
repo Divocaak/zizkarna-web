@@ -45,4 +45,11 @@
 		font-weight: 800;
 		text-transform: uppercase;
 	}
+
+	@media (max-width: 575px) {
+h1{
+	font-size: var(--fs-48);
+		line-height: 55px;
+}
+	}
 </style>

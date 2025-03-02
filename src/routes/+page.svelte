@@ -34,7 +34,6 @@
 	</svg>
 	<p class="catch-phrase">{langs[$lang].index.landing}</p>
 </ImageBlock>
-<span id="about"></span>
 <ContentBlock src="/imgs/5.jpg" imgsLeft={true}>
 	<h1>{langs[$lang].index.about.heading}</h1>
 	<p id="about">{langs[$lang].index.about.about}</p>
@@ -93,7 +92,7 @@
 	.contact-panel {
 		position: relative;
 		width: 100vw;
-		height: 100vh;
+		min-height: 100vh;
 		padding: 0 !important;
 		margin: 0 !important;
 
@@ -128,5 +127,11 @@
 
 	#program-btn:hover {
 		text-shadow: 0px 0px 5px var(--primary);
+	}
+
+	@media (max-width: 575px) {
+		.contact-panel{
+			display: block;
+		}
 	}
 </style>
