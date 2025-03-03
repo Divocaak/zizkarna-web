@@ -1,0 +1,289 @@
+{
+    "cs": {
+        "menu": [
+            "O nás",
+            "Program",
+            "Prostory",
+            "Trhy",
+            "Ž.lab",
+            "Kontakt"
+        ],
+        "index": {
+            "landing": "Kulturní oáza v centru Českých Budějovic",
+            "about": {
+                "heading": "O Žižkárně",
+                "about": "Jsme kulturně-kreativní prostor v Českých Budějovicích pro všechny generace. Snažíme se oživit areál bývalých Žižkových kasáren a nabídnout občanům Českých Budějovic místo pro setkávání, zábavu a kreativitu. Jsme otevření všem umělcům a kreativcům.",
+                "btn": "Chci vědět víc!"
+            },
+            "btn": "program",
+            "contact": {
+                "whereToFindUs": "Kde nás najdete?",
+                "howToConnect": "Jak se s námi spojit?",
+                "general": "Obecné informace",
+                "media": "Media",
+                "markets": "Trhy",
+                "musical": "Hudební dramaturgie",
+                "btn": "Více kontaktů a informace pro promotéry"
+            }
+        },
+        "about": [
+            {
+                "heading": "PŘINÁŠÍME ROZMANITOU KULTURU DO NAŠEHO MĚSTA",
+                "sub": "vize",
+                "texts": [
+                    "Vytvořit kulturní oázu v centru města. Místo, kde kulturní aktéři najdou své zázemí. Místo, kde se místní setkávají s přáteli, sportují a inspirují se. Propojuje generace, profese, profesionály a začátečníky. Místo, které umožní rozvinout potenciál kohokoliv."
+                ]
+            },
+            {
+                "heading": "REDEFINICE KASÁRNA",
+                "texts": [
+                    "Žižkárna je kulturním prostorem, který nabízí pro České Budějovice naprosto jedinečnou atmosféru starých kasárna.",
+                    "Snažíme se přinášet nezvyklé interprety i žánry, které jinde nedostávají prostor. Pomáháme lokálním kapelám a pravidelně spolu pořádáme hudební večery.",
+                    "Společně s našimi návštěvníky dáváme nový život areálu. Navazujeme na minulost, ale dáváme jí barevnost, která ji chyběla."
+                ]
+            },
+            {
+                "heading": "Z RUINY JSME VYTVOŘILI MÍSTO, KTERÉ ŽIJE!",
+                "texts": [
+                    "Začali jsme v roce 2019, kdy Žižkárna byla ruinou. Děravá okna, vrstva prachu a zarostlý areál.",
+                    "Následně nás zasáhla covidová pandemie, kdy jsme provedli komplexní rekonstrukci vnitřních prostor, ale také jsme naplno rozjeli pravidelný program.",
+                    "Od té doby jsme odbavili stovky akcí pro několik desítek tisíc lidí."
+                ]
+            }
+        ],
+        "zlab": {
+            "heading": "Žižkárenská Kulturní Laboratoř",
+            "texts": [
+                "Experimentální platforma pro mladé lidi, kteří si chtějí osvojit nebo zlepšit své znalosti a dovednosti v kreativních odvětvích.",
+                "Díky Ž.labu získává město mladou generaci, která ho pravidelně oživuje pomocí kultury a umění."
+            ],
+            "warning": "Zaregistruj se přes formulář na jeden ze vstupních workshopů!",
+            "soundBtn": "základy zvučení",
+            "lightsBtn": "základy svícení"
+        },
+        "market": {
+            "landing": "Trhy v Žižkárně vždy v neděli od",
+            "btn": "Aktuální termíny",
+            "notOnly": "Nejsme pouze farmářský trh…",
+            "brunch": "Jsme také skvělé místo na nedělní",
+            "theatre": "Děti se mohou těšit na divadélko a největší pískoviště v Budějcích!"
+        },
+        "venues": {
+            "heading": "Naše prostory",
+            "capacity": "Kapacita",
+            "capacityStanding": "Stání",
+            "capacitySitting": "Sezení",
+            "capacityUnits": "lidí",
+            "operatingSeason": "Provozní doba",
+            "idealFor": "Ideální pro",
+            "btn": "Plány a více informací",
+            "venues": [
+                {
+                    "label": "Vnitřní tančírna a Bar",
+                    "operatingSeason": "Celý rok",
+                    "idealFor": [
+                        "Malý koncert",
+                        "Klubovou noc / Party",
+                        "Přednášku",
+                        "Divadlo",
+                        "Slam poetry"
+                    ]
+                },
+                {
+                    "label": "Garáž",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Střední koncert",
+                        "Ted-Talks",
+                        "Divadlo",
+                        "Slam Poetry",
+                        "Větší party",
+                        "Design market"
+                    ]
+                },
+                {
+                    "label": "Násypka",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Větší koncert",
+                        "Ted-Talks",
+                        "Divadlo",
+                        "Slam Poetry",
+                        "Trhy / Street Food Market",
+                        "Letní kino"
+                    ]
+                },
+                {
+                    "label": "buzerplatz",
+                    "operatingSeason": "Květen - říjen",
+                    "idealFor": [
+                        "Velké koncerty",
+                        "Divadlo",
+                        "Trhy / Street Food Market",
+                        "Velké venkovní kino",
+                        "Živý přenos sportovních utkání"
+                    ]
+                }
+            ]
+        },
+        "contacts": {
+            "contacts": {
+                "heading": "kontakty",
+                "music": "Hudební dramaturgie",
+                "programme": "Dramaturgie",
+                "media": "Marketing a PR",
+                "markets": "Trhy"
+            },
+            "forPromoters": {
+                "heading": "Pro promotéry",
+                "presentationBtn": "Prezentace o Žižkárně"
+            },
+            "residency": "Sídlo",
+            "address": "Adresa",
+            "followUs": "Sledujte nás na sociálních sítích"
+        }
+    },
+    "en": {
+        "menu": [
+            "About us",
+            "Programme",
+            "Venues",
+            "Markets",
+            "Ž.lab",
+            "Contacts"
+        ],
+        "index": {
+            "landing": "Cultural oasis in the center of České Budějovice",
+            "about": {
+                "heading": "About Žižkárna",
+                "about": "We are a cultural and creative space in České Budějovice for all generations. We are trying to bring to life the area of the former Žižka barracks and offer the citizens of České Budějovice a place for meeting, entertainment and creativity. We are open to all artists and creative people.",
+                "btn": "More information!"
+            },
+            "btn": "programme",
+            "contact": {
+                "whereToFindUs": "Where to find us?",
+                "howToConnect": "How to connect with us?",
+                "general": "General information",
+                "media": "Media",
+                "markets": "Markets",
+                "musical": "Music programme",
+                "btn": "More contacts and information for promoters"
+            }
+        },
+        "about": [
+            {
+                "heading": "BRINGING DIVERSE CULTURE TO OUR CITY",
+                "sub": "vision",
+                "texts": [
+                    "To create a cultural oasis in the city centre. A place where all participants of culture can find a home. A place where citizens can go to relax, play sports or get inspired. A place that connects generations, industries, professionals and amateurs. A place where everyone can realise their potential and fulfil their dreams."
+                ]
+            },
+            {
+                "heading": "REDEFINITION OF BARRACKS",
+                "texts": [
+                    "Žižkárna is a cultural space that offers a unique atmosphere of the old barracks in České Budějovice.",
+                    "We try to bring unusual performers and genres that don't get space elsewhere. We help local bands and regularly organize music evenings together.",
+                    "Together with our visitors, we give new life to the area. We are buiAlding on the past, but giving it the colour it lacked."
+                ]
+            },
+            {
+                "heading": "WE'VE TURNED A RUIN INTO A PLACE THAT LIVES",
+                "texts": [
+                    "We started in 2019, when Žižkárna was a ruin. Leaky windows, a layer of dust and overgrown grounds.",
+                    "Then the covid pandemic hit, and we undertook a complete renovation of the interior, but we also started our regular programme in full swing. ",
+                    "Since then, we have handled hundreds of events for tens of thousands of people."
+                ]
+            }
+        ],
+        "zlab": {
+            "heading": "Žižkárnas Cultural Lab",
+            "texts": [
+                "An experimental platform for young people who want to acquire or improve their knowledge and skills in the creative industries.",
+                "Thanks to Ž.lab, the city is attracting a young generation that regularly enlivens it through culture and art."
+            ],
+            "warning": "Register for one of the entry workshops via the form!",
+            "soundBtn": "sound engineer basics",
+            "lightsBtn": "light design basics"
+        },
+        "market": {
+            "landing": "Markets in Žižkárna every Sunday from",
+            "btn": "Current dates",
+            "notOnly": "We are not just farmer's market…",
+            "brunch": "We are an ideal place for sunday",
+            "theatre": "Children can enjoy a theatre and the biggest sandpit in Budějce!"
+        },
+        "venues": {
+            "heading": "Venues",
+            "capacity": "Capacity",
+            "capacityStanding": "People standing",
+            "capacitySitting": "People seated",
+            "capacityUnits": "",
+            "operatingSeason": "Operating period",
+            "idealFor": "Ideal use",
+            "btn": "Plan and get more information",
+            "venues": [
+                {
+                    "label": "small indoor venue and bar",
+                    "operatingSeason": "Runs all year",
+                    "idealFor": [
+                        "Small concert",
+                        "Club night",
+                        "Ted-talk",
+                        "Theatre",
+                        "Slam poetry"
+                    ]
+                },
+                {
+                    "label": "garage indoor venue",
+                    "operatingSeason": "May - OCtober",
+                    "idealFor": [
+                        "Middle sized concerts",
+                        "Bigger parties",
+                        "Ted-talks",
+                        "Theatre",
+                        "Slam poetry",
+                        "Design market"
+                    ]
+                },
+                {
+                    "label": "Násypka outdoor venue",
+                    "operatingSeason": "May - OCtober",
+                    "idealFor": [
+                        "Bigger concerts",
+                        "Ted-Talks",
+                        "Theatre",
+                        "Markets / Street Food Market",
+                        "Open-air cinema"
+                    ]
+                },
+                {
+                    "label": "buzerplatz",
+                    "operatingSeason": "May - OCtober",
+                    "idealFor": [
+                        "Big concerts",
+                        "Theatre",
+                        "Markets / Street Food Market",
+                        "Big open-air cinema",
+                        "Sport live streams"
+                    ]
+                }
+            ]
+        },
+        "contacts": {
+            "contacts": {
+                "heading": "contacts",
+                "music": "Music programme",
+                "programme": "Programme",
+                "media": "Marketing & PR",
+                "markets": "Markets"
+            },
+            "forPromoters": {
+                "heading": "For promoters",
+                "presentationBtn": "Presentation about Žižkárna"
+            },
+            "residency": "Registered office",
+            "address": "Address",
+            "followUs": "Follow us"
+        }
+    }
+}
