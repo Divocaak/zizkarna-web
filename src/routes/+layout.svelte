@@ -1,4 +1,5 @@
 <script>
+	import Analytics from '$lib/Analytics.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 </script>
 
@@ -8,6 +9,7 @@
 <!-- about -->
 <!-- contacts -->
 <slot></slot>
+<Analytics />
 
 <style>
 	@font-face {
@@ -50,7 +52,7 @@
 		--fs-48: clamp(48px, 2.5vw, 3rem);
 		--fs-64: clamp(64px, 3.33vw, 4rem);
 		--fs-72: clamp(72px, 3.75vw, 4.5rem);
-		--fs-150: clamp(150px, 9.81vw, 9.37rem)
+		--fs-150: clamp(150px, 9.81vw, 9.37rem);
 	}
 
 	:global(body) {
@@ -97,7 +99,7 @@
 	:global(.primary) {
 		color: var(--primary);
 	}
-	
+
 	:global(.secondary) {
 		color: var(--secondary);
 	}
