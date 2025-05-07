@@ -6,6 +6,48 @@
 	import StyledButton from '$lib/StyledButton.svelte';
 </script>
 
+<svelte:head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "EventVenue",
+					"name": "Vnitřní tančírna a Bar",
+					"description": "Univerzální prostor ideální pro Malý koncert, Klubovou noc / Party, Přednášku, Divadlo, Slam poetry",
+					"url": "https://zizkarna.cz/venues",
+					"maximumAttendeeCapacity": 150,
+					"event": ["MusicEvent", "TheaterEvent". "Party", "Lecture"]
+				},
+				{
+					"@type": "EventVenue",
+					"name": "Garáž",
+					"description": "Univerzální prostor ideální pro Střední koncert, Ted-Talks, Divadlo, Slam Poetry, Větší party, Design market",
+					"url": "https://zizkarna.cz/venues",
+					"maximumAttendeeCapacity": 350,
+					"event": ["MusicEvent", "TheaterEvent", "Party", "Market", "Lecture", "ScreeningEvent", "ExhibitionEvent"]
+				},
+				{
+					"@type": "EventVenue",
+					"name": "Násypka",
+					"description": "Venkovní stage určena pro Větší koncert, Ted-Talks, Divadlo, Slam Poetry, Trhy / Street Food Market, Letní kino",
+					"url": "https://zizkarna.cz/venues",
+					"maximumAttendeeCapacity": 600,
+					"event": ["MusicEvent", "TheaterEvent", "Lecture", "Market", "ScreeningEvent", "Festival", "ExhibitionEvent"]
+				},
+				{
+					"@type": "EventVenue",
+					"name": "Buzerplatz",
+					"description": "Areál Žižkárny použitelný pro Velké koncerty, Divadlo, Trhy / Street Food Market, Velké venkovní kino, Živý přenos sportovních utkání",
+					"url": "https://zizkarna.cz/venues",
+					"maximumAttendeeCapacity": 2000,
+					"event": ["MusicEvent", "TheaterEvent", "Festival", "FoodEvent", "ScreeningEvent", "SportsEvent", "ExhibitionEvent"]
+				}
+			]
+		}
+	</script>
+</svelte:head>
+
 <ImageBlock src="/imgs/2.jpg">
 	<h1 class="primary">{langs[$lang].venues.heading}</h1>
 </ImageBlock>

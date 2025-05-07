@@ -6,6 +6,66 @@
 	import StyledButton from '$lib/StyledButton.svelte';
 </script>
 
+<svelte:head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Žižkárna z.s.",
+			"url": "https://zizkarna.cz",
+			"email": "info@zizkarna.cz",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Česká 222/7",
+				"addressLocality": "České Budějovice",
+				"postalCode": "37001",
+				"addressCountry": "CZ"
+			},
+			"contactPoint": [
+				{
+					"@type": "ContactPoint",
+					"name": "Vojtěch Divoký",
+					"email": "hudebni@zizkarna.cz",
+					"contactType": "Hudební dramaturgie"
+				},
+				{
+					"@type": "ContactPoint",
+					"name": "Petra Hadová",
+					"email": "dramaturgie@zizkarna.cz",
+					"contactType": "Dramaturgie"
+				},
+				{
+					"@type": "ContactPoint",
+					"name": "Radek Matoušek",
+					"email": "media@zizkarna.cz",
+					"contactType": "Marketing a PR"
+				},
+				{
+					"@type": "ContactPoint",
+					"email": "trhy@zizkarna.cz",
+					"contactType": "Trhy"
+				},
+				{
+					"@type": "ContactPoint",
+					"email": "zlab@zizkarna.cz",
+					"contactType": "Ž.lab"
+				}
+			],
+			"location": {
+				"@type": "Place",
+				"name": "Žižkárna",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Žižkova tř. 28",
+					"addressLocality": "České Budějovice",
+					"postalCode": "37001",
+					"addressCountry": "CZ"
+				}
+			}
+		}
+	</script>
+</svelte:head>
+
 <ContentBlock src="/imgs/15.jpg" leftPanelFr={3} contentPadding={0}>
 	<div class="wrapper">
 		<div class="panel contacts">

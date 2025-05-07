@@ -6,6 +6,43 @@
 	import ContentBlock from '$lib/ContentBlock.svelte';
 </script>
 
+<svelte:head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			"name": "Farmářské trhy v Žižkárně",
+			"description": "Pravidelné farmářské trhy nabízející produkty od místních farmářů a výrobců, doplněné o doprovodný program pro děti.",
+			"url": "https://zizkarna.cz/markets",
+			"startDate": "2025-05-18T09:00:00+02:00",
+			"endDate": "2025-05-18T13:00:00+02:00",
+			"eventSchedule": {
+				"@type": "Schedule",
+				"repeatFrequency": "P2W",
+				"startDate": "2025-05-18",
+				"endDate": "2025-11-30",
+				"byDay": "SU"
+			},
+			"location": {
+				"@type": "Place",
+				"name": "Žižkárna",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Žižkova tř. 28",
+					"addressLocality": "České Budějovice",
+					"postalCode": "370 01",
+					"addressCountry": "CZ"
+				}
+			},
+			"organizer": {
+				"@type": "Organization",
+				"name": "Žižkárna",
+				"url": "https://zizkarna.cz"
+			}
+		}
+	</script>
+</svelte:head>
+
 <!-- https://yqnn.github.io/svg-path-editor/ -->
 <svg class="clip-path-svg">
 	<clipPath id="img-top-clip-path" clipPathUnits="objectBoundingBox">
