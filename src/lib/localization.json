@@ -136,7 +136,8 @@
             },
             "forPromoters": {
                 "heading": "Pro promotéry",
-                "presentationBtn": "Prezentace o Žižkárně"
+                "presentationBtn": "Prezentace o Žižkárně",
+                "presentationLink": "https://drive.google.com/file/d/1Hz2_O9nCG6y_6C5pAKFQU6-dv3Z8QZ3c/view?usp=sharing"
             },
             "residency": "Sídlo",
             "address": "Adresa",
@@ -279,7 +280,8 @@
             },
             "forPromoters": {
                 "heading": "For promoters",
-                "presentationBtn": "Presentation about Žižkárna"
+                "presentationBtn": "Presentation about Žižkárna",
+                "presentationLink": "https://drive.google.com/file/d/1Eu8l-cRioi0ouY3yBr5LyvgkKleqPmvH/view?usp=sharing"
             },
             "residency": "Registered office",
             "address": "Address",

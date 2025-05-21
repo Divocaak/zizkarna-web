@@ -6,6 +6,35 @@
 	import StyledButton from '$lib/StyledButton.svelte';
 </script>
 
+<svelte:head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "EducationalOrganization",
+			"name": "Žižkárenská Kulturní Laboratoř",
+			"alternateName": "Ž.lab",
+			"url": "https://zizkarna.cz/zlab",
+			"description": "Experimentální platforma pro mladé lidi, kteří si chtějí osvojit nebo zlepšit své znalosti a dovednosti v kreativních odvětvích.",
+			"parentOrganization": {
+				"@type": "Organization",
+				"name": "Žižkárna",
+				"url": "https://zizkarna.cz"
+			},
+			"location": {
+				"@type": "Place",
+				"name": "Žižkárna",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Žižkova tř. 28",
+					"addressLocality": "České Budějovice",
+					"postalCode": "370 01",
+					"addressCountry": "CZ"
+				}
+			}
+		}
+	</script>
+</svelte:head>
+
 <div class="wrapper">
 	<div class="panel">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.78 94.24">

@@ -8,6 +8,36 @@
 	import langs from '$lib/localization.json';
 </script>
 
+<svelte:head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Žižkárna",
+			"url": "https://zizkarna.cz",
+			"logo": "https://zizkarna.cz/logo.svg",
+			"description": "Kulturně-kreativní prostor v Českých Budějovicích pro všechny generace.",
+			"email": "info@zizkarna.cz",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Žižkova tř. 28",
+				"addressLocality": "České Budějovice",
+				"addressCountry": "CZ"
+			},
+			"location": {
+				"@type": "Place",
+				"name": "Žižkárna",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Žižkova tř. 28",
+					"addressLocality": "České Budějovice",
+					"addressCountry": "CZ"
+				}
+			}
+		}
+	</script>
+</svelte:head>
+
 <ImageBlock src="/imgs/7.jpg">
 	<svg
 		class="logo"
@@ -130,7 +160,7 @@
 	}
 
 	@media (max-width: 575px) {
-		.contact-panel{
+		.contact-panel {
 			display: block;
 		}
 	}
