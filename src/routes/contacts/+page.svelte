@@ -99,10 +99,14 @@
 		<div class="panel">
 			<h1 class="border-b secondary">{langs[$lang].contacts.forPromoters.heading}</h1>
 			<div class="buttons">
-				<StyledButton label="Logo" href="" target="_blank" />
+				<StyledButton
+					label="Logo"
+					href="https://drive.google.com/drive/u/1/folders/1ctJITVEaeS9i6JtveWNFhe3oFfUX45eb"
+					target="_blank"
+				/>
 				<StyledButton
 					label={langs[$lang].contacts.forPromoters.presentationBtn}
-					href=""
+					href={langs[$lang].contacts.forPromoters.presentationLink}
 					target="_blank"
 				/>
 			</div>
