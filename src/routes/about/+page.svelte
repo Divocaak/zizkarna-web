@@ -24,24 +24,30 @@
 	</script>
 </svelte:head>
 
-<ContentBlock src="/imgs/11.jpg">
-	<h1>{langs[$lang].about[0].heading}</h1>
-	<p class="primary">{langs[$lang].about[0].sub}</p>
-	{#each langs[$lang].about[0].texts as text}
-		<p>{text}</p>
-	{/each}
+<ContentBlock mobileDesign={true} src="/imgs/11.jpg">
+	<h1 slot="heading">{langs[$lang].about[0].heading}</h1>
+	<div slot="content">
+		<p class="primary">{langs[$lang].about[0].sub}</p>
+		{#each langs[$lang].about[0].texts as text}
+			<p>{text}</p>
+		{/each}
+	</div>
 </ContentBlock>
-<ContentBlock src="/imgs/16.jpg" imgsLeft={true}>
-	<h1 class="secondary">{langs[$lang].about[1].heading}</h1>
-	{#each langs[$lang].about[1].texts as text}
-		<p>{text}</p>
-	{/each}
+<ContentBlock mobileDesign={true} src="/imgs/16.jpg" imgsLeft={true}>
+	<h1 slot="heading" class="secondary">{langs[$lang].about[1].heading}</h1>
+	<div slot="content">
+		{#each langs[$lang].about[1].texts as text}
+			<p>{text}</p>
+		{/each}
+	</div>
 </ContentBlock>
-<ContentBlock src="/imgs/0.jpg">
-	<h1 class="primary">{langs[$lang].about[2].heading}</h1>
-	{#each langs[$lang].about[2].texts as text}
-		<p>{text}</p>
-	{/each}
+<ContentBlock mobileDesign={true} src="/imgs/0.jpg">
+	<h1 slot="heading" class="primary">{langs[$lang].about[2].heading}</h1>
+	<div slot="content">
+		{#each langs[$lang].about[2].texts as text}
+			<p>{text}</p>
+		{/each}
+	</div>
 </ContentBlock>
 
 <style>

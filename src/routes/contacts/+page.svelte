@@ -66,8 +66,9 @@
 	</script>
 </svelte:head>
 
-<ContentBlock src="/imgs/15.jpg" leftPanelFr={3} contentPadding={0}>
-	<div class="wrapper">
+<ContentBlock src="/imgs/15.jpg" leftPanelFr={3} contentPadding={0} mobileDesign={true}>
+	<h1 slot="heading" class="desktop-hide primary">{langs[$lang].contacts.contacts.heading}</h1>
+	<div slot="content" class="wrapper">
 		<div class="panel contacts">
 			<h1 class="primary">{langs[$lang].contacts.contacts.heading}</h1>
 			<div class="contact-list">
@@ -212,7 +213,15 @@
 		text-transform: uppercase;
 	}
 
+	.desktop-hide {
+		display: none;
+	}
+
 	@media (max-width: 575px) {
+		.desktop-hide {
+			display: block;
+		}
+
 		.wrapper {
 			grid-template-rows: repeat(3, 1fr);
 			grid-template-columns: none;
@@ -239,6 +248,8 @@
 
 		.buttons {
 			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
 		}
 	}
 </style>

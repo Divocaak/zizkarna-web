@@ -1,17 +1,18 @@
 {
     "cs": {
         "menu": [
-            "O nás",
+            "O&nbsp;nás",
             "Program",
             "Prostory",
             "Trhy",
             "Ž.lab",
-            "Kontakt"
+            "Kontakt",
+            "Úvod"
         ],
         "index": {
             "landing": "Kulturní oáza v centru Českých Budějovic",
             "about": {
-                "heading": "O Žižkárně",
+                "heading": "O&nbsp;Žižkárně",
                 "about": "Jsme kulturně-kreativní prostor v Českých Budějovicích pro všechny generace. Snažíme se oživit areál bývalých Žižkových kasáren a nabídnout občanům Českých Budějovic místo pro setkávání, zábavu a kreativitu. Jsme otevření všem umělcům a kreativcům.",
                 "btn": "Chci vědět víc!"
             },
@@ -146,12 +147,13 @@
     },
     "en": {
         "menu": [
-            "About us",
+            "About&nbsp;us",
             "Programme",
             "Venues",
             "Markets",
             "Ž.lab",
-            "Contacts"
+            "Contacts",
+            "Home"
         ],
         "index": {
             "landing": "Cultural oasis in the center of České Budějovice",

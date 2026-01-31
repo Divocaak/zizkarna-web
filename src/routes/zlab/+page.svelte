@@ -191,5 +191,23 @@
 		a {
 			width: max-content;
 		}
+
+		.panel.default-content-block h1{
+			text-align: center;
+		}
+
+		.warning{
+			display: block;
+			border-top: 3px solid var(--black);
+			padding-top: 2rem;
+		}
+
+		.warning svg{
+			display: none;
+		}
+
+		.warning p{
+			text-align: center;
+		}
 	}
 </style>

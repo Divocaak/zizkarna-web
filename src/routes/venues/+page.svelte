@@ -49,20 +49,28 @@
 </svelte:head>
 
 <ImageBlock src="/imgs/2.jpg">
-	<h1 class="primary">{langs[$lang].venues.heading}</h1>
+	<h1 class="mobile-sm primary">{langs[$lang].venues.heading}</h1>
 </ImageBlock>
-<ContentBlock src="/imgs/19.jpg" srcBottom="/imgs/3.jpg" bgClr="var(--primary)" gap={0.5}>
-	<h1>{langs[$lang].venues.venues[0].label}</h1>
-	<h2>{langs[$lang].venues.capacity}</h2>
-	<p>{langs[$lang].venues.capacityStanding}: 120 {langs[$lang].venues.capacityUnits}</p>
-	<p>{langs[$lang].venues.capacitySitting}: 50 {langs[$lang].venues.capacityUnits}</p>
-	<h2>{langs[$lang].venues.operatingSeason}</h2>
-	<p>{langs[$lang].venues.venues[0].operatingSeason}</p>
-	<h2>{langs[$lang].venues.idealFor}</h2>
-	{#each langs[$lang].venues.venues[0].idealFor as text}
-		<p>{text}</p>
-	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} actionClr="var(--black)" />
+<ContentBlock
+	src="/imgs/19.jpg"
+	srcBottom="/imgs/3.jpg"
+	bgClr="var(--primary)"
+	gap={0.5}
+	mobileDesign={true}
+>
+	<h1 slot="heading">{langs[$lang].venues.venues[0].label}</h1>
+	<div slot="content">
+		<h2>{langs[$lang].venues.capacity}</h2>
+		<p>{langs[$lang].venues.capacityStanding}: 120 {langs[$lang].venues.capacityUnits}</p>
+		<p>{langs[$lang].venues.capacitySitting}: 50 {langs[$lang].venues.capacityUnits}</p>
+		<h2>{langs[$lang].venues.operatingSeason}</h2>
+		<p>{langs[$lang].venues.venues[0].operatingSeason}</p>
+		<h2>{langs[$lang].venues.idealFor}</h2>
+		{#each langs[$lang].venues.venues[0].idealFor as text}
+			<p>{text}</p>
+		{/each}
+		<StyledButton href="/contacts" label={langs[$lang].venues.btn} actionClr="var(--black)" />
+	</div>
 </ContentBlock>
 <ContentBlock
 	src="/imgs/12.jpg"
@@ -71,23 +79,26 @@
 	bgClr="var(--secondary)"
 	gap={0.5}
 	imgsLeft={true}
+	mobileDesign={true}
 >
-	<h1>{langs[$lang].venues.venues[1].label}</h1>
-	<h2>{langs[$lang].venues.capacity}</h2>
-	<p>{langs[$lang].venues.capacityStanding}: 350 {langs[$lang].venues.capacityUnits}</p>
-	<p>{langs[$lang].venues.capacitySitting}: 150 {langs[$lang].venues.capacityUnits}</p>
-	<h2>{langs[$lang].venues.operatingSeason}</h2>
-	<p>{langs[$lang].venues.venues[1].operatingSeason}</p>
-	<h2>{langs[$lang].venues.idealFor}</h2>
-	{#each langs[$lang].venues.venues[1].idealFor as text}
-		<p>{text}</p>
-	{/each}
-	<StyledButton
-		href="/contacts"
-		label={langs[$lang].venues.btn}
-		textClr="var(--white)"
-		actionClr="var(--primary)"
-	/>
+	<h1 slot="heading">{langs[$lang].venues.venues[1].label}</h1>
+	<div slot="content">
+		<h2>{langs[$lang].venues.capacity}</h2>
+		<p>{langs[$lang].venues.capacityStanding}: 350 {langs[$lang].venues.capacityUnits}</p>
+		<p>{langs[$lang].venues.capacitySitting}: 150 {langs[$lang].venues.capacityUnits}</p>
+		<h2>{langs[$lang].venues.operatingSeason}</h2>
+		<p>{langs[$lang].venues.venues[1].operatingSeason}</p>
+		<h2>{langs[$lang].venues.idealFor}</h2>
+		{#each langs[$lang].venues.venues[1].idealFor as text}
+			<p>{text}</p>
+		{/each}
+		<StyledButton
+			href="/contacts"
+			label={langs[$lang].venues.btn}
+			textClr="var(--white)"
+			actionClr="var(--primary)"
+		/>
+	</div>
 </ContentBlock>
 <ContentBlock
 	src="/imgs/5.jpg"
@@ -95,29 +106,40 @@
 	clr="var(--white)"
 	bgClr="var(--black)"
 	gap={0.5}
+	mobileDesign={true}
 >
-	<h1>{langs[$lang].venues.venues[2].label}</h1>
-	<h2>{langs[$lang].venues.capacity}</h2>
-	<p>600 {langs[$lang].venues.capacityUnits}</p>
-	<h2>{langs[$lang].venues.operatingSeason}</h2>
-	<p>{langs[$lang].venues.venues[2].operatingSeason}</p>
-	<h2>{langs[$lang].venues.idealFor}</h2>
-	{#each langs[$lang].venues.venues[2].idealFor as text}
-		<p>{text}</p>
-	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)" />
+	<h1 slot="heading">{langs[$lang].venues.venues[2].label}</h1>
+	<div slot="content">
+		<h2>{langs[$lang].venues.capacity}</h2>
+		<p>600 {langs[$lang].venues.capacityUnits}</p>
+		<h2>{langs[$lang].venues.operatingSeason}</h2>
+		<p>{langs[$lang].venues.venues[2].operatingSeason}</p>
+		<h2>{langs[$lang].venues.idealFor}</h2>
+		{#each langs[$lang].venues.venues[2].idealFor as text}
+			<p>{text}</p>
+		{/each}
+		<StyledButton href="/contacts" label={langs[$lang].venues.btn} textClr="var(--white)" />
+	</div>
 </ContentBlock>
-<ContentBlock src="/imgs/17.jpg" srcBottom="/imgs/1.jpg" gap={0.5} imgsLeft={true}>
-	<h1>{langs[$lang].venues.venues[3].label}</h1>
-	<h2>{langs[$lang].venues.capacity}</h2>
-	<p>2000+ {langs[$lang].venues.capacityUnits}</p>
-	<h2>{langs[$lang].venues.operatingSeason}</h2>
-	<p>{langs[$lang].venues.venues[3].operatingSeason}</p>
-	<h2>{langs[$lang].venues.idealFor}</h2>
-	{#each langs[$lang].venues.venues[3].idealFor as text}
-		<p>{text}</p>
-	{/each}
-	<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
+<ContentBlock
+	src="/imgs/17.jpg"
+	srcBottom="/imgs/1.jpg"
+	gap={0.5}
+	imgsLeft={true}
+	mobileDesign={true}
+>
+	<h1 slot="heading">{langs[$lang].venues.venues[3].label}</h1>
+	<div slot="content">
+		<h2>{langs[$lang].venues.capacity}</h2>
+		<p>2000+ {langs[$lang].venues.capacityUnits}</p>
+		<h2>{langs[$lang].venues.operatingSeason}</h2>
+		<p>{langs[$lang].venues.venues[3].operatingSeason}</p>
+		<h2>{langs[$lang].venues.idealFor}</h2>
+		{#each langs[$lang].venues.venues[3].idealFor as text}
+			<p>{text}</p>
+		{/each}
+		<StyledButton href="/contacts" label={langs[$lang].venues.btn} />
+	</div>
 </ContentBlock>
 
 <style>
@@ -162,7 +184,7 @@
 
 	@media (max-width: 575px) {
 		h1.primary {
-			font-size: var(--fs-72);
+			font-size: var(--fs-64);
 			line-height: 75px;
 			text-align: center;
 		}
