@@ -190,10 +190,15 @@
 
 		a {
 			width: max-content;
+			font-size: var(--fs-24);
 		}
 
 		.panel.default-content-block h1{
 			text-align: center;
+		}
+
+		.panel.default-content-block{
+			align-items: center;
 		}
 
 		.warning{

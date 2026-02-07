@@ -136,7 +136,7 @@
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
 		}
 
-		:global(.wrapper.mobile-design .text-panel h1) {
+		:global(.wrapper.mobile-design .text-panel h1, .wrapper.mobile-design .text-panel p#landing) {
 			display: none;
 		}
 
