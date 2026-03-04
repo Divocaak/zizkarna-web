@@ -12,7 +12,7 @@
 	<a class="home text-link-fx" href="/">ŽIŽKÁRNA</a>
 	<div class="wide-nav">
 		<a class="text-link-fx" class:active={$page.url.pathname === '/about'} href="/#about"
-			>{langs[$lang].menu[0]}</a
+			>{@html langs[$lang].menu[0]}</a
 		>
 		<a
 			class="text-link-fx"
@@ -59,9 +59,15 @@
 		<div class="small-nav">
 			<a
 				class="text-link-fx"
+				class:active={$page.url.pathname === '/'}
+				href="/"
+				on:click={() => showMenu(false)}>{@html langs[$lang].menu[6]}</a
+			>
+			<a
+				class="text-link-fx"
 				class:active={$page.url.pathname === '/about'}
-				href="/#about"
-				on:click={() => showMenu(false)}>{langs[$lang].menu[0]}</a
+				href="/about"
+				on:click={() => showMenu(false)}>{@html langs[$lang].menu[0]}</a
 			>
 			<a
 				class="text-link-fx"

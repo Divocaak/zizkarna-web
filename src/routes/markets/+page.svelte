@@ -59,10 +59,12 @@
 <ImageBlock src="/imgs/9.jpg">
 	<img id="logo" src="/markets_logo.png" alt="markets logo" />
 </ImageBlock>
-<ContentBlock src="/imgs/21.jpg">
-	<p id="landing">{langs[$lang].market.landing}</p>
-	<p id="time">9:00</p>
-	<a href="https://program.zizkarna.cz/">{langs[$lang].market.btn}</a>
+<ContentBlock src="/imgs/21.jpg" mobileDesign={true}>
+	<p slot="heading" id="landing">{langs[$lang].market.landing}</p>
+	<div slot="content" class="first-content">
+		<p id="time">9:00</p>
+		<a href="https://program.zizkarna.cz/">{@html langs[$lang].market.btn}</a>
+	</div>
 </ContentBlock>
 <div class="designed">
 	<div id="two-images-block">
@@ -112,9 +114,11 @@
 
 	a {
 		width: 100%;
+		display: block;
+		margin-top: 3rem;
 
 		font-weight: 300;
-		font-size: var(--fs-72);
+		font-size: var(--fs-64);
 		line-height: 90px;
 		text-align: center;
 
@@ -218,9 +222,11 @@
 			font-size: var(--fs-72);
 			line-height: 80px;
 			margin: 0;
+			padding: 2rem 0;
 		}
 
 		a {
+			display: block;
 			font-size: var(--fs-64);
 			line-height: 90px;
 

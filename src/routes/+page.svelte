@@ -6,6 +6,21 @@
 
 	import { lang } from '$lib/stores/LangStore.js';
 	import langs from '$lib/localization.json';
+
+	import { onMount } from 'svelte';
+
+	let isMobile = false;
+	let mql;
+
+	onMount(() => {
+		mql = window.matchMedia('(max-width: 768px)');
+		isMobile = mql.matches;
+
+		const handler = (e) => (isMobile = e.matches);
+		mql.addEventListener('change', handler);
+
+		return () => mql.removeEventListener('change', handler);
+	});
 </script>
 
 <svelte:head>
@@ -64,10 +79,14 @@
 	</svg>
 	<p class="catch-phrase">{langs[$lang].index.landing}</p>
 </ImageBlock>
-<ContentBlock src="/imgs/5.jpg" imgsLeft={true}>
-	<h1>{langs[$lang].index.about.heading}</h1>
-	<p id="about">{langs[$lang].index.about.about}</p>
-	<StyledButton href="/about" label={langs[$lang].index.about.btn} />
+<ContentBlock src="/imgs/5.jpg" imgsLeft={!isMobile}>
+	<h1 slot="heading">{@html langs[$lang].index.about.heading}</h1>
+	<div slot="content">
+		<p id="about">{langs[$lang].index.about.about}</p>
+		<div class="hide-mobiles">
+			<StyledButton href="/about" label={langs[$lang].index.about.btn} />
+		</div>
+	</div>
 </ContentBlock>
 <ImageBlock src="/imgs/20.jpg">
 	<a
@@ -99,6 +118,32 @@
 		<ContactShort label={langs[$lang].index.contact.markets} mail="trhy@zizkarna.cz" />
 		<ContactShort label={langs[$lang].index.contact.musical} mail="hudebni@zizkarna.cz" />
 		<StyledButton href="/contacts" label={langs[$lang].index.contact.btn} />
+	</div>
+</div>
+<div class="socials">
+	<h1>{langs[$lang].contacts.followUs}</h1>
+	<div class="buttons">
+		<StyledButton
+			label="Instagram"
+			href="https://instagram.com/zizkarna/"
+			target="_blank"
+			textClr="#9d00cb"
+			actionClr="var(--primary)"
+		/>
+		<StyledButton
+			label="Facebook"
+			href="https://facebook.com/zizkarnacb"
+			target="_blank"
+			textClr="#0007cb"
+			actionClr="var(--primary)"
+		/>
+		<StyledButton
+			label="YouTube"
+			href="https://youtube.com/@Zizkarna"
+			target="_blank"
+			textClr="#cb0000"
+			actionClr="var(--primary)"
+		/>
 	</div>
 </div>
 
@@ -159,9 +204,41 @@
 		text-shadow: 0px 0px 5px var(--primary);
 	}
 
+	.socials h1 {
+		color: var(--primary);
+		text-align: center;
+	}
+
+	.socials .buttons {
+		display: flex;
+		gap: 1rem;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 3rem;
+	}
+
 	@media (max-width: 575px) {
 		.contact-panel {
 			display: block;
+		}
+
+		h1 {
+			font-size: var(--fs-48);
+		}
+
+		.hide-mobiles {
+			display: none;
+		}
+
+		.contact-panel,
+		.socials h1 {
+			text-align: center;
+		}
+
+		.socials .buttons {
+			flex-direction: column;
 		}
 	}
 </style>

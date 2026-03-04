@@ -94,12 +94,8 @@
 			</p>
 		</div>
 		<a
-			href="https://docs.google.com/forms/d/e/1FAIpQLSdRPxeWKcGwU5bPg8fUtF99RaMQb3cc5IaCKbo9XbiZFNrrHA/viewform"
-			target="_blank">{langs[$lang].zlab.soundBtn}</a
-		>
-		<a
-			href="https://docs.google.com/forms/d/e/1FAIpQLSdI8ntWVbH0GcU9wyjrltMIhvd8k2VvZO5toh1_BaL3ger9LA/viewform"
-			target="_blank">{langs[$lang].zlab.lightsBtn}</a
+			href="https://forms.gle/fjL2sabn9Ywt3m3X7"
+			target="_blank">{langs[$lang].zlab.btn}</a
 		>
 	</div>
 </div>
@@ -190,6 +186,29 @@
 
 		a {
 			width: max-content;
+			font-size: var(--fs-24);
+		}
+
+		.panel.default-content-block h1{
+			text-align: center;
+		}
+
+		.panel.default-content-block{
+			align-items: center;
+		}
+
+		.warning{
+			display: block;
+			border-top: 3px solid var(--black);
+			padding-top: 2rem;
+		}
+
+		.warning svg{
+			display: none;
+		}
+
+		.warning p{
+			text-align: center;
 		}
 	}
 </style>

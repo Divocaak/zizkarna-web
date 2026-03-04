@@ -4,10 +4,6 @@
 </script>
 
 <Navbar />
-<!-- TODO add logo overlays on pages -->
-<!-- landing -->
-<!-- about -->
-<!-- contacts -->
 <slot></slot>
 <Analytics />
 
