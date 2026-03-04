@@ -158,6 +158,7 @@
 		</div>
 	</div>
 </ContentBlock>
+<p class="signature">Website coded and maintained by <a href="https://divokyvojtech.cz/" target="_blank">Vojtěch Divoký</a></p>
 
 <style>
 	.wrapper {
@@ -215,6 +216,12 @@
 
 	.desktop-hide {
 		display: none;
+	}
+
+	.signature{
+		font-size: .6rem;
+		text-align: right;
+		padding: 0 1rem;
 	}
 
 	@media (max-width: 575px) {
