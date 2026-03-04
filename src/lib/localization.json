@@ -55,12 +55,11 @@
         "zlab": {
             "heading": "Žižkárenská Kulturní Laboratoř",
             "texts": [
-                "Experimentální platforma pro mladé lidi, kteří si chtějí osvojit nebo zlepšit své znalosti a dovednosti v kreativních odvětvích.",
-                "Díky Ž.labu získává město mladou generaci, která ho pravidelně oživuje pomocí kultury a umění."
+                "Workshop účastníkům umožní nahlédnout do světa světel a zvuků. Cílem je propojit teoretické znalosti s praktickými ukázkami a vy jste mohli vyzkoušet, jaké to je pracovat v jedné z těchto profesí.",
+                "Dozvíte se na co si dát pozor, co jsou úplné základy, které musíte znát, jak v těchto oborech pracovat s kreativitou a kde se případně vzdělávat dále"
             ],
-            "warning": "Zaregistruj se přes formulář na jeden ze vstupních workshopů!",
-            "soundBtn": "základy zvučení",
-            "lightsBtn": "základy svícení"
+            "warning": "Zaregistruj se přes formulář!",
+            "btn": "formulář"
         },
         "market": {
             "landing": "Trhy v Žižkárně vždy v neděli od",
@@ -201,12 +200,11 @@
         "zlab": {
             "heading": "Žižkárnas Cultural Lab",
             "texts": [
-                "An experimental platform for young people who want to acquire or improve their knowledge and skills in the creative industries.",
-                "Thanks to Ž.lab, the city is attracting a young generation that regularly enlivens it through culture and art."
+                "The workshop will allow participants to gain insight into the world of lighting and sound. The aim is to connect theoretical knowledge with practical demonstrations, and you will have the opportunity to try what it's like to work in one of these professions.",
+                "You will learn what to watch out for, what the absolute basics are that you must know, how to work creatively in these fields, and where you can continue your education if you wish."
             ],
-            "warning": "Register for one of the entry workshops via the form!",
-            "soundBtn": "sound engineer basics",
-            "lightsBtn": "light design basics"
+            "warning": "Register for the workshop!",
+            "btn": "register"
         },
         "market": {
             "landing": "Markets in Žižkárna every Sunday from",
